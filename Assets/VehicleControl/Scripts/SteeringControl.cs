@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace VehicleControl
 {
-    /// Implements the Stanly Lateral Controller
+    /// Implements the Stanley Lateral Controller
     /// http://ai.stanford.edu/~gabeh/papers/hoffmann_stanley_control07.pdf
     [RequireComponent(typeof(VehicleController))]
     public class SteeringControl : MonoBehaviour
