@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace VehicleControl
 {
+    [RequireComponent(typeof(VehicleController))]
     public class SteeringControl : MonoBehaviour
     {
         [Range(0, 1)] [SerializeField] float m_controlGain = 0.5f;

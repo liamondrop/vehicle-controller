@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace VehicleControl
 {
+    [RequireComponent(typeof(VehicleController))]
     public class ThrottleControl : MonoBehaviour
     {
         [Range(0, 1)] [SerializeField] float m_targetThrottle;
