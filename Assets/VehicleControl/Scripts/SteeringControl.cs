@@ -4,13 +4,15 @@ using UnityEngine;
 
 namespace VehicleControl
 {
+    /// Implements the Stanly Lateral Controller
+    /// http://ai.stanford.edu/~gabeh/papers/hoffmann_stanley_control07.pdf
     [RequireComponent(typeof(VehicleController))]
     public class SteeringControl : MonoBehaviour
     {
         [Range(0, 1)] [SerializeField] float m_controlGain = 0.5f;
         [Range(0, 20)] [SerializeField] float m_softening = 10f;
-        [SerializeField] Transform m_frontAxleRef; // front axle transform
-        [SerializeField] Transform m_waypointRef; // target waypoint transform
+        [SerializeField] Transform m_frontAxleRef;
+        [SerializeField] Transform m_waypointRef;
         VehicleController m_controller;
         Rigidbody m_rbody;
         const float TWOPI = 2 * Mathf.PI;

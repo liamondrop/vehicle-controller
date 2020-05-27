@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace VehicleControl
 {
+    /// Simple Proportional / Differential control for modulating throttle
     [RequireComponent(typeof(VehicleController))]
     public class ThrottleControl : MonoBehaviour
     {
